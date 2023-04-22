@@ -3,6 +3,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+h1 {
+	font-family: Georgia, serif;
+}
+
 #sidebar {
 	position: fixed;
 	top: 0;
