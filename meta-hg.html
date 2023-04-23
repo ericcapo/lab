@@ -1,12 +1,20 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AMEL</title>
+	<title>Meta-Hg</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/sidebar.js"></script>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://kit.fontawesome.com/e1e805e201.js" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 </head>
+	
 <body>
 	<div id="sidebar">
 		<ul>
@@ -18,29 +26,14 @@
 		</ul>
 	</div>
 
-<div class="intro">
-
+	<div id="content">
+	
 <h3 class="section-title underline">Meta-Hg working group</h3>
 <p>Created in July 2020, the Meta-Hg working group aims to (i) compile and curate an up-to-date catalogue of Hg-cycling genes, (ii) establish consensus protocols to detect Hg-cycling genes from metagenomes and (iii) study the distribution of Hg-cycling microorganisms in marine ecosystems. This working group is coordinated by Eric Capo funded by the Severo Ochoa Excellence Program postdoctoral fellowship (2021-2023, CEX2019-000928-S) with advisors Andrea Garcia Bravo, Stefan Bertilsson and Erik Björn.
 	
 <br>
 <p> This interactive map shows the locations of available marine metagenomes.</p>
 
-</div>
-
-<head>
-  <title>Meta-Hg project</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/e1e805e201.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-</head>
-
-<body>
 <div class="col-sm-12">
 <div id="map" style="width: 750px; height: 500px;"></div>
 <script>
@@ -1597,15 +1590,11 @@ for (var i = 0; i < locations.length; i++) {
 </script>
 </div>
 </div>
-</body>
 
 <h3 class="section-title underline">Outcomes</h3>
 <p align="justify"><b>July 2022</b> - Publication "A consensus protocol for the recovery of mercury methylation genes from metagenomes" Eric Capo, Benjamin D. Peterson, Minjae Kim, Daniel S. Jones, Silvia G. Acinas, Marc Amyot, Stefan Bertilsson, Erik Björn, Moritz Buck, Claudia Cosio, Dwayne A. Elias, Cynthia Gilmour, Maria Soledad Goñi Urriza, Baohua Gu, Heyu Lin, Yu-Rong Liu, Katherine McMahon, John W. Moreau, Jarone Pinhassi, Mircea Podar, Fernando Puente-Sánchez, Pablo Sánchez, Veronika Storck, Yuya Tada, Adrien Vigneron, David Walsh, Marine Vandewalle-Capo, Andrea G. Bravo, Caitlin M. Gionfriddo - Early view in <i>Molecular Ecology Resources</i> <a href="https://doi.org/10.1111/1755-0998.13687" target="_blank"><u>doi: 10.1111/1755-0998.13687</u></a>.</p>
-
 <p align="justify"><b>March 2022</b> - Release of the pipeline <a href="https://github.com/ericcapo/marky-coco" target="_blank"><u>marky-coco</u></a>. Marky-coco is a ready-to-use pipeline to detect and identify hgcAB genes from raw paired-end fastq files.</p>
-
 <p align="justify"><b>February 2022</b> - <a href="https://www.researchgate.net/publication/358891262_Towards_building_a_consensus_protocol_for_the_recovery_of_the_genes_involved_in_mercury_methylation_hgcAB_from_environmental_genomic_data" target="_blank"><u>Poster</u></a> "Towards building a consensus protocol for the recovery of the genes involved in mercury methylation (hgcAB) from environmental genomic data" - in Ocean Science Meeting 2022, virtual meeting.</p>
-
 <p align="justify"><b>January 2021</b> -  Release of the <a href="https://zenodo.org/record/6687122" target="_blank"><u>Hg-MATE database</u></a> v1.01142021. It includes a gene catalogue and tools to detect (HMM profiles) and taxomically identified (reference phylogenetic trees) potential mercury methylators (i.e., carrying hgcAB genes).</p>
 
 <h3 class="section-title underline">Members</h3>
@@ -1674,6 +1663,6 @@ for (var i = 0; i < locations.length; i++) {
 <li><a href="https://www.nioz.nl/en/about/organisation/staff/bastiaan-von-meijenfeldt" target="_blank"><u>Bastiaan von Meijenfeldt</u></a> (Utrecht University, Netherlands)</li>	
 <li><a href="https://www.concordia.ca/artsci/biology/faculty.html.html?fpid=david-walsh" target="_blank"><u>David Walsh</u></a> (Concordia University, Montréal, Canada)</li>	
 
- </div>
+</div>
 </body>
 </html>
