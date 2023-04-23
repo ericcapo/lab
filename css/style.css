@@ -8,9 +8,11 @@ body {
 h1 {
   font-family: "Segoe UI", Arial, sans-serif;
 }
+
 h2 {
   font-family: "Segoe UI", Arial, sans-serif;
 }
+
 h3 {
   font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -69,25 +71,19 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
 }
 
-.container p {
-  width: 45%;
-  margin: 0;
-}
-
-.container img {
+.container .text {
   width: 50%;
-  margin: 0;
+  margin-right: 20px;
 }
 
-/* New feature: responsive design */
-@media only screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  .container p, .container img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+.container .logos {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.container .logos img
