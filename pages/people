@@ -1,1 +1,69 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMEL</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/sidebar.js"></script>
+</head>
+<body>
+	<div id="sidebar">
+		<ul>
+			<li><a href="index.html">About us</a></li>
+			<li><a href="pages/research.html">Research</a></li>
+			<li><a href="pages/people.html">People</a></li>
+			<li><a href="pages/pubs.html">Publications</a></li>
+			<li><a href="pages/contact.html">Contact us</a></li>
+		</ul>
+	</div>
+<h3 class="section-title underline">Lab members</h3>
+
+
+<br>
+
+<h3 class="section-title underline">Collaborators</h3>
+
+<ul>
+<li>Inger Alsos (UiT, Tromsø, Norway)</li>
+<li>Agneta Andersson (Umeå University, Sweden)</li>
+<li>Anders Andersson (KTH, Stockholm, Sweden)</li>
+<li>Elinor Andrén (Södertörn University, Huddinge, Sweden)</li>
+<li>Linda Armbrecht (University of Tasmania, Australia)</li>
+<li>Fabien Arnaud (EDYTEM, Le-Bourget-du-lac, France)</li>
+<li>Cecilia Barouillet (INRAE CARRTEL, Thonon-les-Bains, France)</li>
+<li>Stefan Bertilsson (SLU, Uppsala, Sweden)</li>  
+<li>Christian Bigler (Umeå University, Sweden)</li>  
+<li>Richard Bindler (Umeå University, Sweden)</li>
+<li>Erik Björn (Umeå University, Sweden)</li>
+<li>Pär Byström (Umeå University, Sweden)</li>
+<li>Andrea Garcia-Bravo (ICM-CSIC, Barcelona, Spain)</li>
+<li>Marco Coolen (Curtin University, Australia)</li>
+<li>Didier Debroas (LMGE, Clermont-Ferrand, France)</li>
+<li>Isabelle Domaizon (INRAE CARRTEL, Thonon-les-Bains, France)</li>
+<li>Laura Epp (Konstanz University, Germany)</li>
+<li>Charline Giguet-Covex (EDYTEM, Le-Bourget-du-lac, France)</li>
+<li>Caitlin Gionfriddo (SERC, Edgewater, USA)</li>
+<li>Irene Gregory-Eaves (McGill University, Canada)</li>
+<li>Peter Heintzman (Stockholm University, Sweden)</li>
+<li>Qi Lin (NIGLAS, Chinese Academy of Sciences, China)</li>
+<li>Marie-Eve Monchamp (McGill University, Montreal, Canada)</li>
+<li>Kevin Nota (MPI_EVA, Leipzig, Germany)</li>
+<li>Laura Parducci (University of Rome, Italia)</li>
+<li>Mikkel Pedersen (GLOBE Institute, Copenhagen, Denmark)</li>
+<li>Frances Pick (University of Ottawa, Canada)</li>
+<li>Jarone Pinhassi (Linnaeus University, Kalmar, Sweden)</li>
+<li>Ben Peterson (University of California-Davis, USA)</li>
+<li>Alexandra Rouillard (UiT, Tromsø, Norway)</li>
+<li>Johan Rydberg (Umeå University, Sweden)</li>
+<li>John Smol (Queen´s University, Kingston, Canada)</li>
+<li>Trisha Spanbauer (Toledo University, USA)</li>
+<li>Göran Spong (SLU Umeå, Sweden)</li>
+<li>Kathleen Stoof-Leichsenring (AWI, Potsdam, Germany)</li>
+<li>Narumi Tsugeki (Matsuyama University, Japan)</li>
+<li>Aurele Vuillemin (GFZ Potsdam, Germany)</li>
+<li>Susie Wood (Cawthron Institute, New-Zealand)</li>
+</ul>
+
+</div>
+</body>
+</html>
