@@ -80,3 +80,14 @@ img {
   width: 50%;
   margin: 0;
 }
+
+/* New feature: responsive design */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container p, .container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
