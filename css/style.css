@@ -1,97 +1,97 @@
 /* Global styles */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+font-family: "Segoe UI", Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
 
 h1 {
-  font-family: "Segoe UI", Arial, sans-serif;
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
 h2 {
-  font-family: "Segoe UI", Arial, sans-serif;
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
 h3 {
-  font-family: "Segoe UI", Arial, sans-serif;
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Sidebar styles */
 #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #0077be;
-  color: #fff;
-  font-size: 20px;
-  font-family: "Segoe UI", Arial, sans-serif;
+position: fixed;
+top: 0;
+left: 0;
+width: 250px;
+height: 100%;
+background-color: #0077be;
+color: #fff;
+font-size: 20px;
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
 #sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+list-style: none;
+padding: 0;
+margin: 20px 0;
 }
 
 #sidebar ul li {
-  margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 #sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
+color: #fff;
+text-decoration: none;
+padding: 10px;
+display: block;
 }
 
 #sidebar ul li a:hover {
-  background-color: #0077be;
+background-color: #0077be;
 }
 
-/* Content styles */
+/* Content styles /
 #content {
-  margin-left: 250px; /* change to match sidebar width */
-  padding: 20px;
+margin-left: 250px; / change to match sidebar width */
+padding: 20px;
+margin-top: 50px;
 }
 
-/* Image styles */
+/* Image styles /
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto; /* center image horizontally */
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto; / center image horizontally */
 }
 
 /* New feature: side-by-side elements */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
 }
 
 .container .text {
-  width: 50%;
-  margin-right: 20px;
+width: 50%;
+margin-right: 20px;
 }
 
 .container .logos {
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+width: 30%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 .logos {
-    float: right;
+float: right;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
+width: 50px;
+height: 50px;
+margin: 0 10px;
 }
 .container .logos img
