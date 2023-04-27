@@ -86,7 +86,7 @@ img {
   justify-content: space-between;
 }
 .logos {
-    float: right;
+    float: left;
 }
 .logo {
   display: inline-block;
