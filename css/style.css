@@ -1,102 +1,130 @@
 /* Global styles */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+font-family: "Segoe UI", Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
 
-h1 {
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-
-h2 {
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-
-h3 {
-  font-family: "Segoe UI", Arial, sans-serif;
+h1, h2, h3 {
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Sidebar styles */
 #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #0077be;
-  color: #fff;
-  font-size: 20px;
-  font-family: "Segoe UI", Arial, sans-serif;
+position: fixed;
+top: 0;
+left: 0;
+width: 250px;
+height: 100%;
+background-color: #0077be;
+color: #fff;
+font-size: 20px;
+font-family: "Segoe UI", Arial, sans-serif;
 }
 
 #sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+list-style: none;
+padding: 0;
+margin: 20px 0;
 }
 
 #sidebar ul li {
-  margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 #sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
+color: #fff;
+text-decoration: none;
+padding: 10px;
+display: block;
 }
 
 #sidebar ul li a:hover {
-  background-color: #0077be;
+background-color: #0077be;
 }
 
-/* Content styles */
+/* Content styles /
 #content {
-  margin-left: 250px; /* change to match sidebar width */
-  padding: 20px;
+margin-left: 250px; / change to match sidebar width */
+padding: 20px;
 }
 
-/* Image styles */
+/* Image styles /
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto; /* center image horizontally */
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto; / center image horizontally */
 }
 
 /* New feature: side-by-side elements */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
 }
-.container img {
-  height: auto;
-  max-width: 40%;
-}
-.container .text {
-  width: 55%;
-  margin-right: 20px;
-}
+
 .container p {
-  width: 55%;
-  margin: 0;
+width: 45%;
+margin: 0;
 }
-.container .logos {
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+.container img {
+width: 50%;
+margin: 0;
 }
-.logos {
-    float: right;
+
+/* Eric Capo image */
+#eric-capo-image {
+max-width: 25%;
 }
+
+/* People image */
+#people-image {
+width: 50%;
+}
+
+/* Logos */
 .logo {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
+width: 50px;
+height: 50px;
+margin-left: 10px;
+cursor: pointer;
 }
-.container .logos img
+
+.twitter-logo {
+background-image: url('images/twitter-logo.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.researchgate-logo {
+background-image: url('images/researchgate-logo.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.google-scholar-logo {
+background-image: url('images/google-scholar-logo.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+.container {
+flex-direction: column;
+align-items: center;
+}
+
+.container p {
+width: 100%;
+margin: 10px 0;
+}
+
+.container img {
+width: 100%;
+margin: 10px 0;
+}
+}
