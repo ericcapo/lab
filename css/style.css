@@ -71,14 +71,19 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
 }
-
+.container img {
+  height: auto;
+  max-width: 40%;
+}
 .container .text {
-  width: 50%;
+  width: 55%;
   margin-right: 20px;
 }
-
+.container p {
+  width: 55%;
+  margin: 0;
+}
 .container .logos {
   width: 30%;
   display: flex;
