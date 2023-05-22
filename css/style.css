@@ -23,6 +23,7 @@ h1, h2, h3 {
   background-image: url(/images/Logo.png);
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 2;
 }
 
 #sidebar ul {
@@ -50,6 +51,8 @@ h1, h2, h3 {
 #content {
   margin-left: 250px; /* change to match sidebar width */
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* New feature: side-by-side elements */
@@ -97,5 +100,6 @@ img {
   height: auto;
   display: block;
   margin: 0 auto; /* center image horizontally */
+  position: relative;
+  z-index: 0;
 }
-``
