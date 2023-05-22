@@ -88,7 +88,7 @@ h1, h2, h3 {
 
 /* Image styles */
 img {
-  max-width: 60%;
+  max-width: 30%;
   height: auto;
   display: block;
   margin: 0 auto; /* center image horizontally */
@@ -96,7 +96,7 @@ img {
 
 /* Additional image styles */
 .image-fit {
-  max-width: 60%;
+  max-width: 30%;
   height: auto;
   display: block;
   margin: 0 auto; /* center image horizontally */
