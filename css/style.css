@@ -101,3 +101,27 @@ img {
   display: block;
   margin: 0 auto; /* center image horizontally */
 }
+
+.avatar {
+  display: flex;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
