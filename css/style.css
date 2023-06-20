@@ -104,13 +104,16 @@ img {
 
 .avatar {
   display: flex;
+  flex-wrap: wrap; /* Add flex-wrap to wrap the avatar members */
+  justify-content: center; /* Center the avatars horizontally */
 }
 
 .member {
+  flex-basis: 20%; /* Set a flexible basis to distribute members evenly */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 10px;
+  margin: 10px; /* Add some margin for spacing */
 }
 
 .square {
