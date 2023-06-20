@@ -62,5 +62,5 @@ h1, h2, h3 {
   align-items: flex-start;
   margin-top: 50px;
   margin-left: 220px;
+  min-width: calc(100% - 220px); /* Set a minimum width to prevent content from going under the sidebar */
 }
-
