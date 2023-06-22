@@ -14,7 +14,7 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 220px;
   height: 100%;
   background-color: #0077be;
   color: #fff;
@@ -49,7 +49,7 @@ h1, h2, h3 {
 
 /* Content styles */
 #content {
-  margin-left: 220px; /* changed to accommodate 200px sidebar + 20px margin */
+  margin-left: 240px; /* changed to accommodate 220px sidebar + 20px margin */
   padding: 20px;
   position: relative;
   z-index: 1;
