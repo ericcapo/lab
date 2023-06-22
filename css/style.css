@@ -58,9 +58,46 @@ h1, h2, h3 {
 /* New feature: side-by-side elements */
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 50px;
-  margin-left: 220px;
-  min-width: calc(100% - 220px); /* Set a minimum width to prevent content from going under the sidebar */
+}
+
+.container .text {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.container .logos {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logos {
+  float: left;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+/* Image styles */
+img {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center image horizontally */
+}
+
+/* Additional image styles */
+.image-fit {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center image horizontally */
 }
