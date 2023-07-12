@@ -11,18 +11,12 @@ h1, h2, h3 {
 
 /* Sidebar styles */
 #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
   background-color: #0077be;
   color: #fff;
   font-size: 20px;
   font-family: "Segoe UI", Arial, sans-serif;
-  background-image: url(/images/Logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 2;
 }
 
@@ -49,10 +43,10 @@ h1, h2, h3 {
 
 /* Content styles */
 #content {
-  margin-left: 220px; /* changed to accommodate 200px sidebar + 20px margin */
   padding: 20px;
   position: relative;
   z-index: 1;
+  margin-top: 220px; /* Add margin-top to create space for the sidebar */
 }
 
 /* New feature: side-by-side elements */
