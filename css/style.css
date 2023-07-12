@@ -44,9 +44,7 @@ h1, h2, h3 {
 /* Content styles */
 #content {
   padding: 20px;
-  position: relative;
-  z-index: 1;
-  margin-top: 220px; /* Add margin-top to create space for the sidebar */
+  margin-top: 20px; /* Add margin-top to create space for the sidebar */
 }
 
 /* New feature: side-by-side elements */
