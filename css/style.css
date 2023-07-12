@@ -23,6 +23,9 @@ h1, h2, h3 {
   list-style: none;
   padding: 0;
   margin: 20px 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
 }
 
 #sidebar ul li {
@@ -43,7 +46,6 @@ h1, h2, h3 {
 /* Content styles */
 #content {
   padding: 20px;
-  margin-top: 20px; /* Add margin-top to create space for the sidebar */
 }
 
 /* New feature: side-by-side elements */
