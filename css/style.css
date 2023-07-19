@@ -29,6 +29,13 @@ h1, h2, h3 {
   justify-content: space-around; 
 }
 
+#sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
 #sidebar ul li a:hover {
   background-color: #0077be;
 }
