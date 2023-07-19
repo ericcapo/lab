@@ -13,7 +13,7 @@ h1, h2, h3 {
 /* Sidebar styles */
 #sidebar {
   width: 100%; /* Adjust the width as needed */
-  height: auto;
+  height: 40 px;
   background-color: #0077be;
   color: #fff;
   font-size: 20px;
@@ -37,6 +37,7 @@ h1, h2, h3 {
   text-decoration: none;
   padding: 10px;
   display: block;
+  text-decoration: none; /* Remove underlining */
 }
 
 #sidebar ul li a:hover {
