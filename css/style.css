@@ -46,6 +46,8 @@ h1, h2, h3 {
 /* Content styles */
 #content {
   padding: 20px;
+  margin-left: 15%; /* Add 15% margin to the left */
+  margin-right: 15%; /* Add 15% margin to the right */
 }
 
 /* New feature: side-by-side elements */
