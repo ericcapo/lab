@@ -58,14 +58,13 @@
 
     .avatar {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column; /* Stack items vertically */
       align-items: center;
       margin-top: 50px;
     }
 
     .member {
-      width: calc(50% - 20px); /* Adjust the width with margin between members */
+      width: 100%; /* Take full width of the container */
       margin-bottom: 20px;
       display: flex;
       align-items: center;
@@ -74,7 +73,6 @@
     .square {
       width: 100px;
       height: 100px;
-      border-radius: 50%;
       overflow: hidden;
       margin-right: 20px;
     }
@@ -92,14 +90,15 @@
 </head>
 
 <body>
-  <div id="sidebar">
-    <ul>
-      <li><a href="#">Member 1</a></li>
-      <li><a href="#">Member 2</a></li>
-      <!-- Add more members as needed -->
-    </ul>
-  </div>
-
+	<div id="sidebar">
+		<ul>
+			<li><a href="index.html">Capo lab</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="people.html">Team</a></li>
+			<li><a href="papers.html">Publications</a></li>
+		</ul>
+	</div>
+  
   <div id="content">
     <div class="avatar">
       <div class="member">
@@ -107,7 +106,7 @@
           <img src="images/Eric.jpg" alt="Member 1">
         </div>
         <div class="member-description">
-          <p>Description for Member 1.</p>
+          <p>Description for Member 1.Description for Member 1.Description for Member 1.Description for Member 1.Description for Member 1.Description for Member 2.Description for Member 2.Description for Member 2.Description for Member 2.Description for Member 2.</p>
         </div>
       </div>
 
@@ -116,7 +115,7 @@
           <img src="images/Mailys.png" alt="Member 2">
         </div>
         <div class="member-description">
-          <p>Description for Member 2.</p>
+          <p>Description for Member 2.Description for Member 2.Description for Member 2.Description for Member 2.Description for Member 2.Description for Member 2.</p>
         </div>
       </div>
       <!-- Add more members as needed -->
