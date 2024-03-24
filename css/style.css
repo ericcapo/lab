@@ -23,7 +23,7 @@ h1, h2, h3 {
 #sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 15;
+  margin: 0;
   display: flex;
   flex-direction: row; 
   justify-content: space-around; 
