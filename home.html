@@ -1,30 +1,81 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Capo lab</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Capo Lab</title>
+    <style>
+        /* Apply global styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0077be; /* Blue background for the whole page */
+        }
+
+        /* Content container */
+        .content-container {
+            margin: 0 auto;
+            width: 80%; /* Central content width (20% margin on left and right) */
+            background-color: #ffffff; /* White background for the content */
+            padding: 20px;
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better contrast */
+        }
+
+        /* Side-by-side layout */
+        .side-by-side {
+            display: flex;
+            gap: 20px; /* Space between the elements */
+            align-items: flex-start;
+        }
+
+        /* Text section */
+        .text-section {
+            flex: 2;
+        }
+
+        /* Media section */
+        .media-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .media-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Link styling */
+        a {
+            color: #0077be;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-	
 <body>
 
-<div style="width: 100%; height: 50px; background-color: #0077be;"></div>
-
-    <!-- Content -->
-    <div style="margin: 0 10%; padding: 20px; text-align: justify; line-height: 1.6;">
-<div class="side-by-side">
+    <!-- Central Content -->
+    <div class="content-container">
+        <div class="side-by-side">
+            <!-- Text Section -->
             <div class="text-section">
-                <h2 class="section-title underline">Aquatic microbial ecology lab</h3>
-		<p class="justified-text">We explore the ecology of marine and freshwater systems with a focus on <b>aquatic microorganisms</b> i.e., bacteria, archaea and protists. Our focus lies in understanding the temporal dynamics of microbial communities and their functional responses to <b>environmental change</b>, such as climate change, eutrophication, mercury pollution or coral bleaching. Specifically our main research lines are centered on investigating the consequences of deoxygenation of water columns on microbial processes and related ecosystem services. We apply <b>molecular ecology</b> methods, such as metabarcoding, (ancient) metagenomics, MAGs-based analysis and metatranscriptomics. We rely on molecular paleoecology approaches, based on <b>sedimentary DNA</b> sequencing to reconstruct past changes in aquatic ecosystems. By combining genetic information from past and modern environments, we strive to shed light on the intricate relationships between microbial communities and their environment.</p>
+                <h2>Aquatic Microbial Ecology Lab</h2>
+                <p>
+                    We explore the ecology of marine and freshwater systems with a focus on <b>aquatic microorganisms</b>, i.e., bacteria, archaea, and protists. Our focus lies in understanding the temporal dynamics of microbial communities and their functional responses to <b>environmental change</b>, such as climate change, eutrophication, mercury pollution, or coral bleaching. Specifically, our main research lines are centered on investigating the consequences of deoxygenation of water columns on microbial processes and related ecosystem services. We apply <b>molecular ecology</b> methods, such as metabarcoding, (ancient) metagenomics, MAGs-based analysis, and metatranscriptomics. We rely on molecular paleoecology approaches, based on <b>sedimentary DNA</b> sequencing to reconstruct past changes in aquatic ecosystems. By combining genetic information from past and modern environments, we strive to shed light on the intricate relationships between microbial communities and their environment.
+                </p>
                 <p>Contact: <a href="mailto:eric.capo@umu.se">eric.capo@umu.se</a></p>
                 <p>Department of Ecology and Environmental Science, Umeå University (Umeå, Sweden)</p>
             </div>
-  
-            <div class="media-section"><img src="images/Image2025.png" alt="Logo" class="image-fit"></div>
-</div> 
-</div>
-	
-	
+
+            <!-- Media Section -->
+            <div class="media-section">
+                <img src="images/Image2025.png" alt="Logo">
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
