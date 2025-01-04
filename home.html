@@ -24,26 +24,39 @@
             display: flex;
             gap: 10px; 
             align-items: flex-start;
+           flex-wrap: wrap; 
         }
 
         /* Text section */
         .text-section {
             flex: 2;
         font-size: 1.1em;
+        min-width: 250px;
         }
 
         /* Media section */
         .media-section {
             flex: 1;
             text-align: center;
+            min-width: 200px;
         }
 
         .media-section img {
-            max-width: 40%;
+            max-width: 100%;
             height: auto;
             border-radius: 8px;
+            display: block;
+            margin: 0 auto;
         }
-
+        
+        iframe {
+            width: 100%;
+            max-width: 640px; /* Max width for the video */
+            height: auto;
+            aspect-ratio: 16 / 9; /* Maintains the aspect ratio */
+            border-radius: 8px;
+        }
+        
         /* Link styling */
         a {
             color: #0077be;
@@ -52,6 +65,17 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        .underline {
+            border-bottom: 3px solid #0077be;
+            display: inline-block;
+            padding-bottom: 5px;
         }
     </style>
 </head>
@@ -69,13 +93,13 @@
 <h3 class="section-title underline">Microbial ecology of oxygen-deficient marine systems</h3>
 <div class="side-by-side">
 <div class="text-section"><p align="justify">We study the microbial diversity in low-oxygen waters from the global ocean (<a href="https://ericcapo.github.io/lab/meta-hg.html" target="_blank"><u>Meta-Hg working group</u></a>) and specific coastal systems i.e., the Baltic Sea (w Anders Andersson and Elinor Andrén), the Black Sea (w Marco Coolen), Cariaco Basin (w Maria Pachiadaki), Rossfjordvatnet (w Erik Björn).</p> 
-<div class="media-section"> <iframe width="70%" height="315" src="https://www.youtube.com/embed/_EdsVF-Etpo" title="Fjord frontiers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="media-section"> <iframe src="https://www.youtube.com/embed/_EdsVF-Etpo" title="Fjord frontiers" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
 <h3 class="section-title underline">Microbial ecology of lake ecosystems</h3>
 <div class="side-by-side">
 <div class="media-section"><img src="images/lake.jpg" alt="Logo"></div>
-<div class="text-section"><p align="justify">We analyze the environmental DNA from water and sediment samples from lake ecosystems to unravel long-term and short-term changes in lakes. Currently, we are working on Lake Biwa (w Narumi Tsugeki), Lake Kassjön (w Johan Rydberg), Lake Ekoln (w Stefan Bertilsson), Lake Xiliang (w Yu Zhao), Sihailongwan Maar Lake (w Dongna Yan), Lake NamCo (w Camille Thomas).</p> 
+<div class="text-section"><p align="justify">We analyze the environmental DNA from water and sediment samples from lake ecosystems to unravel long-term and short-term changes in lakes. Currently, we are working on Lake Biwa (w Narumi Tsugeki), Lake Kassjön (w Johan Rydberg), Lake Ekoln (w Stefan Bertilsson), Lake Xiliang (w Yu Zhao), Sihailongwan Maar Lake (w Dongna Yan), Lake NamCo (w Camille Thomas).</p></div>
 </div>
     
 </div>
