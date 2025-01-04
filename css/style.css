@@ -12,12 +12,11 @@ h1, h2, h3 {
 
 /* Sidebar styles */
 #sidebar {
-  width: 100%; /* Adjust the width as needed */
+  width: 100%;
   height: auto;
   background-color: #0077be;
   color: #fff;
   font-size: 20px;
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 #sidebar ul {
@@ -25,13 +24,10 @@ h1, h2, h3 {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: row; 
-  justify-content: space-around; 
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#sidebar ul li {
-  margin-bottom: 10px;
-}
 #sidebar ul li a {
   color: #fff;
   text-decoration: none;
@@ -40,17 +36,50 @@ h1, h2, h3 {
 }
 
 #sidebar ul li a:hover {
-  background-color: #0077be;
+  background-color: #005f9e;
 }
 
 /* Content styles */
 #content {
   padding: 20px;
-  margin-left: 15%; /* Add 15% margin to the left */
-  margin-right: 15%; /* Add 15% margin to the right */
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-/* New feature: side-by-side elements */
+/* Side-by-side layout for photo/video and text */
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.media-section {
+  flex: 1;
+  text-align: center;
+}
+
+.media-section img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.text-section {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.text-section p {
+  margin-bottom: 15px;
+}
+
+/* Avatar layout */
 .avatar {
   display: flex;
   flex-wrap: wrap;
@@ -60,10 +89,10 @@ h1, h2, h3 {
 }
 
 .member {
-  width: calc(20% - 20px); /* 20% width with 20px margin between members */
+  width: calc(20% - 20px);
   margin-bottom: 20px;
   text-align: center;
-  color: #333; /* Add color to member names */
+  color: #333;
 }
 
 .square {
@@ -71,7 +100,7 @@ h1, h2, h3 {
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto; /* Center the square */
+  margin: 0 auto;
 }
 
 .square img {
@@ -80,41 +109,22 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
-.container .logos {
-  width: 30%;
+/* Gallery styles */
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.logos {
-  float: left;
-}
-
-.logo {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .gallery-item {
-    margin: 20px;
+  margin: 20px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
-
-
-
