@@ -19,67 +19,49 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better contrast */
         }
 
-        /* Side-by-side layout */
-        .side-by-side {
-            display: flex;
-            gap: 5px; 
-            align-items: center; /* Aligns content vertically */
-        }
+       /* General side-by-side layout */
+.side-by-side {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 
-           /* Default proportions (50%-50%) */
-        .text-section, .media-section {
-        flex: 1;
-        }
-        
-        .side-by-side.wide-text .text-section {
-        flex: 3; /* 75% of the width */
-        }
+/* Default proportions (50%-50%) */
+.side-by-side .text-section, 
+.side-by-side .media-section {
+    flex: 1; /* Ensures equal size for both sections */
+}
 
-        .side-by-side.wide-text .media-section {
-        flex: 1; /* 25% of the width */
-        }
- 
-        .text-section, .media-section {
-            flex: 1; /* Ensures equal size for both sections */
-            max-width: 50%; /* Restricts each section to half the container width */
-        }
+/* Adjust proportions for the wide-text section (75%-25%) */
+.side-by-side.wide-text .text-section {
+    flex: 3; /* 75% of the width */
+}
 
-        /* Text section */
-        .text-section {
-            font-size: 1.1em;
-            min-width: 250px; /* Ensures a minimum width for the text */
-        }
+.side-by-side.wide-text .media-section {
+    flex: 1; /* 25% of the width */
+}
 
-        /* Media section */
-        .media-section {
-            display: flex;
-            justify-content: center; /* Centers content horizontally */
-            align-items: center; /* Centers content vertically */
-        }
+/* Ensure media elements are responsive */
+.media-section iframe, 
+.media-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
- 
-        .media-section iframe, .media-section img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        }
-       
-    /* Style for a larger iframe */
-       .media-section.large-iframe iframe {
-        width: 80%; /* Full width of the container */
-        max-width: 500px; /* Maximum size for the iframe */
-        height: auto;
-         aspect-ratio: 16 / 9; /* Maintain aspect ratio */
-         border-radius: 8px;
-        }
+/* Style for smaller images */
+.media-section.small-image img {
+    width: 100%;
+    max-width: 150px; /* Smaller maximum size for the image */
+}
 
-    /* Style for a smaller image */
-            .media-section.small-image img {
-            width: 100%; /* Full width of the container */
-            max-width: 150px; /* Smaller maximum size for the image */
-            height: auto;
-            border-radius: 8px;
-    }
+/* Style for larger iframes */
+.media-section.large-iframe iframe {
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Maximum size for the iframe */
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
         
         /* Link styling */
         a {
