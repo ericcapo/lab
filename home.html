@@ -25,7 +25,12 @@
             gap: 5px; 
             align-items: center; /* Aligns content vertically */
         }
-     
+
+           /* Default proportions (50%-50%) */
+        .text-section, .media-section {
+        flex: 1;
+        }
+        
         .side-by-side.wide-text .text-section {
         flex: 3; /* 75% of the width */
         }
@@ -52,21 +57,21 @@
             align-items: center; /* Centers content vertically */
         }
 
-            .media-section img, .media-section iframe {
-            width: 100%; /* Makes the image/iframe fill the container */
-            max-width: 300px; /* Limits the maximum width */
-            height: auto; /* Maintains aspect ratio */
-            border-radius: 8px; /* Optional rounded corners */
+ 
+        .media-section iframe, .media-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
         }
-
-          /* Style for a larger iframe */
-           .media-section.large-iframe iframe {
-            width: 80%; /* Full width of the container */
-            max-width: 500px; /* Maximum size for the iframe */
-            height: auto;
-            aspect-ratio: 16 / 9; /* Maintain aspect ratio */
-            border-radius: 8px;
-    }
+       
+    /* Style for a larger iframe */
+       .media-section.large-iframe iframe {
+        width: 80%; /* Full width of the container */
+        max-width: 500px; /* Maximum size for the iframe */
+        height: auto;
+         aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+         border-radius: 8px;
+        }
 
     /* Style for a smaller image */
             .media-section.small-image img {
