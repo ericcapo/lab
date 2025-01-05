@@ -25,7 +25,15 @@
             gap: 5px; 
             align-items: center; /* Aligns content vertically */
         }
+     
+        .side-by-side.wide-text .text-section {
+        flex: 3; /* 75% of the width */
+        }
 
+        .side-by-side.wide-text .media-section {
+        flex: 1; /* 25% of the width */
+        }
+ 
         .text-section, .media-section {
             flex: 1; /* Ensures equal size for both sections */
             max-width: 50%; /* Restricts each section to half the container width */
@@ -96,7 +104,7 @@
 
 <h2>Aquatic Microbial Ecology Lab</h2>
 
-<div class="side-by-side">
+<div class="side-by-side wide-text">
     <div class="text-section">
         <p align="justify">We explore the ecology of marine and freshwater systems with a focus on <b>aquatic microorganisms</b>, i.e., bacteria, archaea, and protists. Our focus lies in understanding the temporal dynamics of microbial communities and their functional responses to <b>environmental change</b>, such as climate change, eutrophication, mercury pollution, or coral bleaching. Specifically, our main research lines are centered on investigating the consequences of deoxygenation of water columns on microbial processes and related ecosystem services. We apply <b>molecular ecology</b> methods, such as metabarcoding, (ancient) metagenomics, MAGs-based analysis, and metatranscriptomics. We rely on molecular paleoecology approaches, based on <b>sedimentary DNA</b> sequencing to reconstruct past changes in aquatic ecosystems. By combining genetic information from past and modern environments, we strive to shed light on the intricate relationships between microbial communities and their environment.</p>
         <p>Contact: <a href="mailto:eric.capo@umu.se">eric.capo@umu.se</a></p>
