@@ -17,8 +17,6 @@ h1, h2, h3 {
   background-color: #0077be;
   color: #fff;
   font-size: 1.2em;
-   text-align: center; /* Centers inline content, though not required for flexbox */
-
 }
 
 #sidebar ul {
