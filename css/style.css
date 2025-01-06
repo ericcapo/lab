@@ -11,12 +11,9 @@ body {
 
 /* Sidebar styles */
 #sidebar {
-  width: 100%; /* Full width of the sidebar */
   background-color: #0077be;
   color: #fff;
   font-size: 1.2em;
-  margin-left: 15%; /* Apply 15% margin on the left */
-  margin-right: 15%; /* Apply 15% margin on the right */
   position: fixed; /* Sidebar stays in place */
   top: 0;
   left: 0;
