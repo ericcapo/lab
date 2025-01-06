@@ -22,8 +22,6 @@ h1, h2, h3 {
   background-color: #0077be;
   color: #fff;
   font-size: 1.4em;
-  margin-left: 15%; /* Apply 15% margin on the left */
-  margin-right: 15%; /* Apply 15% margin on the right */
 }
 
 #sidebar ul {
