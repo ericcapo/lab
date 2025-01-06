@@ -4,6 +4,11 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 0;
+  padding: 20px;
+  margin-left: 15%; /* Apply 15% margin on the left */
+  margin-right: 15%; /* Apply 15% margin on the right */
+  font-size: 1.2em;
+  width: 70%
 }
 
 h1, h2, h3 {
