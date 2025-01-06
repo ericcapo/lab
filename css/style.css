@@ -16,7 +16,9 @@ h1, h2, h3 {
   height: auto;
   background-color: #0077be;
   color: #fff;
-  font-size: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 1.2em;
 }
 
 #sidebar ul {
