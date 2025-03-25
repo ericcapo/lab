@@ -3,7 +3,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0 auto;
   padding: 0;
-  width: 100%;
+  width: 70%;
   font-size: 1.1em;
   display: flex; /* Use flexbox to handle layout */
   flex-direction: column; /* Default layout direction */
@@ -11,7 +11,7 @@ body {
 
 
 #sidebar {
-  width: 100%; /* Full width of the page */
+  width: 100vw; /* Full width of the page */
   height: 60px; /* Adjust the height as needed */
   background-color: #0077be;
   color: #fff;
