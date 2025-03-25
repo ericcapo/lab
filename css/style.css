@@ -117,6 +117,14 @@ img {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
+.small-image {
+  width: auto; /* Maintain aspect ratio */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
 .justified-text {
   text-align: justify;
 }
