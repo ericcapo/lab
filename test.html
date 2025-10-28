@@ -1,96 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Capo lab</title>
+    <title>Capo lab - Photo Gallery</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="./js/sidebar.js"></script>
     <style>
-        /* Additional styles for the organized team layout */
-        .team-section {
+        /* Additional styles for the photo gallery */
+        .gallery-section {
             margin-bottom: 40px;
         }
         
-        .team-grid {
+        .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
+            gap: 20px;
             margin-top: 20px;
         }
         
-        .team-card {
-            background-color: #f9f9f9;
+        .photo-card {
+            background-color: #fff;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
         }
         
-        .team-card:hover {
+        .photo-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
         
-        .team-image {
+        .photo-image {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            display: block;
             border-bottom: 3px solid #0077be;
         }
         
-        .team-info {
-            padding: 20px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
+        .photo-info {
+            padding: 15px;
         }
         
-        .team-name {
-            font-size: 1.3em;
+        .photo-title {
+            font-size: 1.2em;
             font-weight: bold;
             margin-bottom: 5px;
             color: #0077be;
         }
         
-        .team-role {
+        .photo-date {
             font-style: italic;
             color: #666;
             margin-bottom: 10px;
+            font-size: 0.9em;
         }
         
-        .team-description {
-            flex-grow: 1;
-            margin-bottom: 15px;
+        .photo-description {
             font-size: 0.95em;
             line-height: 1.5;
-        }
-        
-        .team-contact {
-            margin-top: auto;
-            font-size: 0.9em;
             color: #333;
         }
         
-        .alumni-list, .collaborators-list {
-            columns: 2;
-            column-gap: 30px;
-            margin-top: 15px;
-        }
-        
-        .alumni-list li, .collaborators-list li {
-            margin-bottom: 8px;
-            break-inside: avoid;
+        .timeline-indicator {
+            text-align: center;
+            margin: 30px 0;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+            font-style: italic;
+            color: #0077be;
         }
         
         @media (max-width: 768px) {
-            .team-grid {
+            .gallery-grid {
                 grid-template-columns: 1fr;
-            }
-            
-            .alumni-list, .collaborators-list {
-                columns: 1;
             }
         }
     </style>
@@ -103,272 +86,147 @@
 <li><a href="research.html">Research</a></li>
 <li><a href="people.html">Team</a></li>
 <li><a href="papers.html">Publications</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 </ul>
 </div>
 
 <div id="content">
-<h2 class="section-title underline">Lab members</h2> 
+<h2 class="section-title underline">Lab Gallery</h2> 
+<p>Explore moments from our lab activities, field work, and team events. Scroll down to see older photos from our lab's history.</p>
 
-<div class="team-section">
-    <h3 class="section-title underline">Group leader</h3> 	
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="images/Eric.png" alt="Eric" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://ericcapo.github.io/lab/ericcapo.html" target="_blank">Eric Capo</a></div>
-                <div class="team-role">Assistant Professor</div>
-                <div class="team-description">
-                    Eric Capo is Assistant Professor at the Department of Ecology and Environmental Science at Umeå University (Sweden). He has a PhD in molecular paleoecology with expertise in aquatic microbial ecology and is the founder of the <a href="https://sedadna.github.io/" target="_blank"><u>sedaDNA scientific society</u></a>, a network about sedDNA research.
-                </div>
-                <div class="team-contact">Contact: <b>eric.capo@umu.se</b></div>
+<div class="gallery-section">
+    <h3 class="section-title">Recent Photos</h3>
+    <div class="gallery-grid">
+        <div class="photo-card">
+            <img src="images/gallery/fieldwork-2024.jpg" alt="Fieldwork 2024" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Baltic Sea Expedition</div>
+                <div class="photo-date">September 2024</div>
+                <div class="photo-description">Collecting sediment samples from the Baltic Sea for sedDNA analysis.</div>
+            </div>
+        </div>
+        
+        <div class="photo-card">
+            <img src="images/gallery/lab-meeting-2024.jpg" alt="Lab Meeting 2024" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Weekly Lab Meeting</div>
+                <div class="photo-date">August 2024</div>
+                <div class="photo-description">Discussing recent findings from our metagenomics studies.</div>
+            </div>
+        </div>
+        
+        <div class="photo-card">
+            <img src="images/gallery/conference-2024.jpg" alt="Conference 2024" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">International sedDNA Conference</div>
+                <div class="photo-date">June 2024</div>
+                <div class="photo-description">Presenting our latest research on ancient microbial communities.</div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="team-section">
-    <h3 class="section-title underline">Postdoctoral researchers</h3> 	
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="images/Coco.jpg" alt="Corentin" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Lourdes-Martinez-Garcia" target="_blank">Corentin Fournier</a></div>
-                <div class="team-role">Postdoctoral Researcher</div>
-                <div class="team-description">
-                    Corentin Fournier is a postdoc in Capo lab co-supervised by Eric Libby (IceLab). His work aims to apply microbial metabolic models into environmental genomics data to better understand biogeochemical interactions in past and modern environments, with a primary focus on Baltic Sea and Swedish West Coast fjords.
-                </div>
-                <div class="team-contact">Contact: <b>corentin.fournier@umu.se</b></div>
+<div class="timeline-indicator">Continuing with older photos...</div>
+
+<div class="gallery-section">
+    <h3 class="section-title">2023</h3>
+    <div class="gallery-grid">
+        <div class="photo-card">
+            <img src="images/gallery/drone-sampling-2023.jpg" alt="Drone Sampling 2023" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Drone Water Sampling</div>
+                <div class="photo-date">October 2023</div>
+                <div class="photo-description">Testing our new drone system for collecting eDNA samples from remote lakes.</div>
             </div>
         </div>
         
-        <div class="team-card">
-            <img src="images/Baraa.png" alt="Baraa" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Baraa-Rehamnia" target="_blank">Baraa Rehamnia</a></div>
-                <div class="team-role">Postdoctoral Researcher</div>
-                <div class="team-description">
-                    Baraa Rehamnia is a postdoctoral researcher in Eric Capo's lab, specializing in microbial survival in aquatic sediments through metagenomics. Her current research focuses on uncovering the survival pathways of resilient microorganisms, particularly those thriving in low-energy environments in deep aquatic sediments.
-                </div>
-                <div class="team-contact">Contact: <b>baraa.rehamnia@umu.se</b></div>
+        <div class="photo-card">
+            <img src="images/gallery/new-members-2023.jpg" alt="New Members 2023" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Welcome New Team Members</div>
+                <div class="photo-date">September 2023</div>
+                <div class="photo-description">Welcoming our new postdocs and PhD students to the Capo lab.</div>
             </div>
         </div>
         
-        <div class="team-card">
-            <img src="images/Isa.jpg" alt="Isabel" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Isabel-Sanz-Saez" target="_blank">Isabel Sanz-Sáez</a></div>
-                <div class="team-role">Postdoctoral Researcher</div>
-                <div class="team-description">
-                    Isabel Sanz-Sáez is a postdoc in Erik Björns group at the Chemistry Department of the Umeå University. Her research focus on exploring the intricate relationships between microbes and environmental pollutants, including both legacy and emerging contaminants.
-                </div>
-                <div class="team-contact">Contact: <b>isabel.sanz@umu.se</b></div>
+        <div class="photo-card">
+            <img src="images/gallery/collaboration-2023.jpg" alt="Collaboration 2023" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">International Collaboration</div>
+                <div class="photo-date">May 2023</div>
+                <div class="photo-description">Meeting with researchers from the Chinese Academy of Sciences.</div>
             </div>
         </div>
         
-        <div class="team-card">
-            <img src="images/Dongna.jpg" alt="Dongna" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Yan-Dongna" target="_blank">Dongna Yan</a></div>
-                <div class="team-role">Postdoctoral Researcher</div>
-                <div class="team-description">
-                    Dongna Yan is a postdoc working in Zhisheng An group at the Institute of Earth Environment (Chinese Academy of Sciences, Xi'an, Shaanxi). Her current research focus on the study of past ecological environmental changes recoded by sedDNA and geochemical indicators.
-                </div>
-                <div class="team-contact">Contact: <b>yandn@ieecas.cn</b></div>
-            </div>
-        </div>
-        
-        <div class="team-card">
-            <img src="images/Li.jpg" alt="Li" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Li-Zhao-71" target="_blank">Li Zhao</a></div>
-                <div class="team-role">Postdoctoral Researcher</div>
-                <div class="team-description">
-                    Li Zhao is a post-doc working in the field of marine microbial ecology in the group of Agneta Andersson, focusing on how dissolved organic matter (DOM) influences microbial community function, particularly in the context of climate change.
-                </div>
-                <div class="team-contact">Contact: <b>li.zhao@umu.se</b></div>
+        <div class="photo-card">
+            <img src="images/gallery/workshop-2023.jpg" alt="Workshop 2023" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Bioinformatics Workshop</div>
+                <div class="photo-date">March 2023</div>
+                <div class="photo-description">Hosting a workshop on sedDNA data analysis for early-career researchers.</div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="team-section">
-    <h3 class="section-title underline">PhD students</h3> 	
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="images/Julia.png" alt="Júlia" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://es.linkedin.com/in/j%C3%BAlia-dordal-soriano-165000242" target="_blank">Júlia Dordal Soriano</a></div>
-                <div class="team-role">PhD Student</div>
-                <div class="team-description">
-                    Júlia Dordal Soriano is a PhD student from Andrea Garcia Bravo at the ICM-CSIC (Barcelona). Her current research focuses on the study of microbial processes and environmental factors that control mercury transformations in the global ocean.
-                </div>
-                <div class="team-contact">Contact: <b>julia.dordal.18@gmail.com</b></div>
+<div class="timeline-indicator">Older memories...</div>
+
+<div class="gallery-section">
+    <h3 class="section-title">2022</h3>
+    <div class="gallery-grid">
+        <div class="photo-card">
+            <img src="images/gallery/lab-move-2022.jpg" alt="Lab Move 2022" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">New Lab Space</div>
+                <div class="photo-date">November 2022</div>
+                <div class="photo-description">Moving into our new laboratory facilities at Umeå University.</div>
             </div>
         </div>
         
-        <div class="team-card">
-            <img src="images/nik.png" alt="Nicola" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.ciimar.up.pt/members/nicola-gambardella/" target="_blank">Nicola Gambardella</a></div>
-                <div class="team-role">PhD Student</div>
-                <div class="team-description">
-                    Nicola Gambardella is a PhD student from Catarina Magalhães group at "LaCaixa" INPhINIT fellowship program at CIIMAR (Porto, Portugal) working on prokaryotic communities involved in permafrost N and Hg cycling with molecular and bioinformatic approaches.
-                </div>
-                <div class="team-contact">Contact: <b>ngambardella@ciimar.up.pt</b></div>
+        <div class="photo-card">
+            <img src="images/gallery/field-trip-2022.jpg" alt="Field Trip 2022" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Abisko Research Station</div>
+                <div class="photo-date">August 2022</div>
+                <div class="photo-description">Conducting fieldwork at the Abisko Scientific Research Station in northern Sweden.</div>
             </div>
         </div>
         
-        <div class="team-card">
-            <img src="images/Seb.png" alt="Sébastien" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.umu.se/en/staff/sebastien-leveque/" target="_blank">Sébastien Leveque</a></div>
-                <div class="team-role">PhD Student</div>
-                <div class="team-description">
-                    Sébastien Leveque is a PhD student from Nick Kamenos group investigating the acclimation and adaptation of the coral holobiont. He mainly focus on the symbiotic community composition within coral reefs using molecular ecology tools.
-                </div>
-                <div class="team-contact">Contact: <b>sebastien.leveque@umu.se</b></div>
-            </div>
-        </div>
-        
-        <div class="team-card">
-            <img src="images/Anton.png" alt="Anton" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Meifang-Zhong-2" target="_blank">Anton Sandström</a></div>
-                <div class="team-role">PhD Student</div>
-                <div class="team-description">
-                    Anton Sandström is a PhD student from Per Stenberg group exploring the ecosystems of the Skåne region using an unique eDNA sets from air filters to study agricultural pathogens.
-                </div>
-                <div class="team-contact">Contact: <b>anton.sandstrom01@umu.se</b></div>
-            </div>
-        </div>
-        
-        <div class="team-card">
-            <img src="images/Meifang.png" alt="Meifang" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://www.researchgate.net/profile/Meifang-Zhong-2" target="_blank">Meifang Zhong</a></div>
-                <div class="team-role">PhD Student</div>
-                <div class="team-description">
-                    Meifang Zhong is a PhD student working on microbial metabolisms of deoxygenated marine systems with molecular (paleo)ecology approaches (metagenomics, metatranscriptomics, MAGs).
-                </div>
-                <div class="team-contact">Contact: <b>meifang.zhong@umu.se</b></div>
+        <div class="photo-card">
+            <img src="images/gallery/first-conference-2022.jpg" alt="First Conference 2022" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">First sedDNA Society Meeting</div>
+                <div class="photo-date">June 2022</div>
+                <div class="photo-description">Organizing the inaugural meeting of the sedDNA scientific society.</div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="team-section">
-    <h3 class="section-title underline">Undergraduate students</h3> 	
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="images/Kajsa.jpg" alt="Kajsa" class="team-image">
-            <div class="team-info">
-                <div class="team-name">Kajsa Brändström</div>
-                <div class="team-role">Master Student</div>
-                <div class="team-description">
-                    Kajsa Brändström is a Master student studying the vertical distribution of organic matter cycling genes in the redoxclines of the Baltic Sea water columns with metagenomics and metatranscriptomics.
-                </div>
+<div class="timeline-indicator">Early days of the lab...</div>
+
+<div class="gallery-section">
+    <h3 class="section-title">2021</h3>
+    <div class="gallery-grid">
+        <div class="photo-card">
+            <img src="images/gallery/lab-setup-2021.jpg" alt="Lab Setup 2021" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">Lab Establishment</div>
+                <div class="photo-date">October 2021</div>
+                <div class="photo-description">Setting up the first equipment when the Capo lab was established.</div>
             </div>
         </div>
         
-        <div class="team-card">
-            <img src="images/Manuela2.jpg" alt="Manuela" class="team-image">
-            <div class="team-info">
-                <div class="team-name">Manuela Grane</div>
-                <div class="team-role">Master Student</div>
-                <div class="team-description">
-                    Manuela Grane is a Master student studying the reliability of metabarcoding to assess the composition of lake fish communities from drone-sampled water samples in Abisko region.
-                </div>
+        <div class="photo-card">
+            <img src="images/gallery/first-team-2021.jpg" alt="First Team 2021" class="photo-image">
+            <div class="photo-info">
+                <div class="photo-title">First Lab Members</div>
+                <div class="photo-date">September 2021</div>
+                <div class="photo-description">The original team members when the lab first started.</div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="team-section">
-    <h3 class="section-title underline">Others</h3> 	
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="images/Dragonfly.jpg" alt="Drones" class="team-image">
-            <div class="team-info">
-                <div class="team-name">Drones Team</div>
-                <div class="team-role">Research Equipment</div>
-                <div class="team-description">
-                    Dragonfly, Firefly and Butterfly are SwellPro FD3 waterproof drones used for environmental monitoring. They dedicate their lives to skimming the surface of lakes, collecting water samples for eDNA analysis.
-                </div>
-            </div>
-        </div>
-        
-        <div class="team-card">
-            <img src="images/Totoro.jpg" alt="Totoro" class="team-image">
-            <div class="team-info">
-                <div class="team-name">Totoro</div>
-                <div class="team-role">Computing Server</div>
-                <div class="team-description">
-                    Totoro is a T550 server equipped with 140 GB of RAM, 16 threads, and a NVIDIA Tesla T4 GPU. Its life mission is to support the Capo lab by processing metabarcoding data, constructing phylogenetic trees, and handling all the quick, everyday bioinformatics tasks.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br>
-<h2 class="section-title underline">Alumni</h2>
-<ul class="alumni-list">
-    <li><a href="https://www.researchgate.net/profile/Lourdes-Martinez-Garcia" target="_blank">Lourdes Martínez-García</a> (Post-doc, 2023-2025)</li>
-    <li><a href="https://www.researchgate.net/profile/Mailys-Picard" target="_blank">Maïlys Picard</a> (Post-doc, 2023-2025)</li>
-    <li><a href="https://www.linkedin.com/in/bumin-kaan-kiraz-946908235/?originalSubdomain=tr" target="_blank">Bumin Kaan Kiraz</a> (Erasmus Bachelor student, 2025)</li>
-    <li><a href="https://emysr.cnrs.fr/consortium/people/vanderzon/" target="_blank">Kari-Anne Van der Zon</a> (visiting PhD student, 2025)</li>
-    <li>Saga Edling (Bachelor student, 2024)</li>
-    <li><a href="https://www.researchgate.net/profile/Marissa-Despins" target="_blank">Marissa Despins</a> (visiting PhD student, 2024)</li>
-    <li><a href="https://www.researchgate.net/profile/Yu-Zhao-95" target="_blank">Yu Zhao</a> (visiting PhD student, 2024)</li>
-    <li><a href="https://www.researchgate.net/profile/Fredrik-Olajos" target="_blank">Fredrik Olajos</a> (PhD student, 2023-2024)</li>
-    <li>Anthony Khairallah (Master student, 2024)</li>
-    <li><a href="https://gr.linkedin.com/in/panagiota-xanthopoulou-95044a87?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">Panagiota Xhantopoulou</a> (visiting PhD student, 2024)</li>
-</ul>
-	  
-<br>
-<h2 class="section-title underline">Main collaborators</h2>
-<ul class="collaborators-list">
-    <li>Inger G Alsos (UiT, Tromsø, Norway)</li>
-    <li>Agneta Andersson (Umeå University, Sweden)</li>
-    <li>Anders Andersson (KTH, Stockholm, Sweden)</li>
-    <li>Elinor Andrén (Södertörn University, Huddinge, Sweden)</li>
-    <li>Linda Armbrecht (University of Tasmania, Australia)</li>
-    <li>Fabien Arnaud (EDYTEM, Le-Bourget-du-lac, France)</li>
-    <li>Cecilia Barouillet (INRAE CARRTEL, Thonon-les-Bains, France)</li>
-    <li>Stefan Bertilsson (SLU, Uppsala, Sweden)</li>  
-    <li>Christian Bigler (Umeå University, Sweden)</li>  
-    <li>Richard Bindler (Umeå University, Sweden)</li>
-    <li>Erik Björn (Umeå University, Sweden)</li>
-    <li>Heidi Burdett (Umeå University, Sweden)</li>	
-    <li>Pär Byström (Umeå University, Sweden)</li>
-    <li>Andrea Garcia Bravo (ICM-CSIC, Barcelona, Spain)</li>
-    <li>Marco Coolen (Curtin University, Australia)</li>
-    <li>Didier Debroas (LMGE, Clermont-Ferrand, France)</li>
-    <li>Isabelle Domaizon (INRAE CARRTEL, Thonon-les-Bains, France)</li>
-    <li>Laura Epp (Konstanz University, Germany)</li>
-    <li>Charline Giguet-Covex (EDYTEM, Le-Bourget-du-lac, France)</li>
-    <li>Caitlin Gionfriddo (SERC, Edgewater, USA)</li>
-    <li>Irene Gregory-Eaves (McGill University, Canada)</li>
-    <li>Peter Heintzman (Stockholm University, Sweden)</li>
-    <li>Nick Kamenos (Umeå University, Sweden)</li>	
-    <li>Qi Lin (NIGLAS, Chinese Academy of Sciences, China)</li>
-    <li>Marie-Eve Monchamp (McGill University, Montreal, Canada)</li>
-    <li>Kevin Nota (MPI_EVA, Leipzig, Germany)</li>
-    <li>Laura Parducci (University of Rome, Italia)</li>
-    <li>Mikkel Winther Pedersen (Globe Institute, Copenhagen, Denmark)</li>
-    <li>Frances Pick (University of Ottawa, Canada)</li>
-    <li>Jarone Pinhassi (Linnaeus University, Kalmar, Sweden)</li>
-    <li>Ben Peterson (University of California-Davis, USA)</li>
-    <li>Alexandra Rouillard (UiT, Tromsø, Norway)</li>
-    <li>Johan Rydberg (Umeå University, Sweden)</li>
-    <li>John Smol (Queen´s University, Kingston, Canada)</li>
-    <li>Trisha Spanbauer (Toledo University, USA)</li>
-    <li>Göran Spong (SLU Umeå, Sweden)</li>
-    <li>Kathleen Stoof-Leichsenring (AWI, Potsdam, Germany)</li>
-    <li>Narumi Tsugeki (Matsuyama University, Japan)</li>
-    <li>Aurele Vuillemin (GFZ Potsdam, Germany)</li>
-    <li>Susie Wood (Cawthron Institute, New-Zealand)</li>
-</ul>
 
 </div>
 </body>
