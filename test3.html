@@ -73,120 +73,71 @@
             color: #333;
         }
         
-        /* Full-page width group leader section */
+        /* Full-width group leader section matching other cards */
         .group-leader-section {
-            background: linear-gradient(135deg, #f9f9f9 0%, #e8f4ff 100%);
-            border-radius: 12px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            margin-bottom: 50px;
-            border: 2px solid #0077be;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #0077be;
         }
         
         .group-leader-section:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
         
         .group-leader-content {
             display: flex;
             align-items: center;
-            padding: 40px;
-            gap: 40px;
-        }
-        
-        .group-leader-image-container {
-            flex: 0 0 350px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 0;
+            gap: 0;
         }
         
         .group-leader-image {
-            width: 100%;
-            height: 350px;
+            width: 250px;
+            height: 250px;
             object-fit: cover;
-            border-radius: 8px;
-            border: 4px solid #0077be;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .group-leader-badge {
-            background-color: #0077be;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            margin-top: 15px;
-            font-weight: bold;
-            font-size: 1.1em;
+            border-right: 3px solid #0077be;
         }
         
         .group-leader-info {
-            flex: 1;
+            padding: 25px;
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
         
         .group-leader-name {
-            font-size: 2.5em;
+            font-size: 1.5em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: #0077be;
-            line-height: 1.1;
         }
         
         .group-leader-role {
             font-style: italic;
             color: #666;
-            margin-bottom: 25px;
-            font-size: 1.5em;
-            border-bottom: 2px solid #0077be;
-            padding-bottom: 15px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
         }
         
         .group-leader-description {
             flex-grow: 1;
-            margin-bottom: 25px;
-            font-size: 1.2em;
-            line-height: 1.7;
-            text-align: justify;
-        }
-        
-        .group-leader-highlights {
-            background-color: rgba(0, 119, 190, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            border-left: 4px solid #0077be;
-        }
-        
-        .group-leader-highlights ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        
-        .group-leader-highlights li {
-            margin-bottom: 8px;
-            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            line-height: 1.5;
         }
         
         .group-leader-contact {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
+            margin-top: auto;
+            font-size: 0.9em;
             color: #333;
-            padding: 15px 20px;
-            background-color: rgba(0, 119, 190, 0.05);
-            border-radius: 8px;
-            border-left: 4px solid #0077be;
-        }
-        
-        .contact-icon {
-            font-size: 1.4em;
+            font-weight: bold;
         }
         
         .alumni-list, .collaborators-list {
@@ -200,32 +151,6 @@
             break-inside: avoid;
         }
         
-        @media (max-width: 1024px) {
-            .group-leader-content {
-                flex-direction: column;
-                text-align: center;
-                padding: 30px;
-            }
-            
-            .group-leader-image-container {
-                flex: 0 0 auto;
-                margin-bottom: 30px;
-            }
-            
-            .group-leader-image {
-                width: 280px;
-                height: 280px;
-            }
-            
-            .group-leader-name {
-                font-size: 2em;
-            }
-            
-            .group-leader-role {
-                font-size: 1.3em;
-            }
-        }
-        
         @media (max-width: 768px) {
             .team-grid {
                 grid-template-columns: 1fr;
@@ -236,19 +161,14 @@
             }
             
             .group-leader-content {
-                padding: 20px;
+                flex-direction: column;
             }
             
-            .group-leader-name {
-                font-size: 1.8em;
-            }
-            
-            .group-leader-role {
-                font-size: 1.2em;
-            }
-            
-            .group-leader-description {
-                font-size: 1.1em;
+            .group-leader-image {
+                width: 100%;
+                height: 250px;
+                border-right: none;
+                border-bottom: 3px solid #0077be;
             }
         }
     </style>
@@ -271,28 +191,14 @@
     <h3 class="section-title underline">Group leader</h3> 	
     <div class="group-leader-section">
         <div class="group-leader-content">
-            <div class="group-leader-image-container">
-                <img src="images/Eric.png" alt="Eric Capo" class="group-leader-image">
-                <div class="group-leader-badge">Lab Director</div>
-            </div>
+            <img src="images/Eric.png" alt="Eric Capo" class="group-leader-image">
             <div class="group-leader-info">
                 <div class="group-leader-name"><a href="https://ericcapo.github.io/lab/ericcapo.html" target="_blank">Eric Capo</a></div>
                 <div class="group-leader-role">Assistant Professor</div>
                 <div class="group-leader-description">
-                    Eric Capo is Assistant Professor at the Department of Ecology and Environmental Science at Umeå University (Sweden). He has a PhD in molecular paleoecology with expertise in aquatic microbial ecology and is the founder of the <a href="https://sedadna.github.io/" target="_blank"><u>sedaDNA scientific society</u></a>, a network about sedDNA research.
+                    Assistant Professor at Umeå University with expertise in aquatic microbial ecology and molecular paleoecology. Founder of the <a href="https://sedadna.github.io/" target="_blank"><u>sedaDNA scientific society</u></a>.
                 </div>
-                <div class="group-leader-highlights">
-                    <ul>
-                        <li>Expertise in molecular paleoecology and aquatic microbial ecology</li>
-                        <li>Founder of the sedaDNA scientific society</li>
-                        <li>Specialized in sedimentary DNA research and applications</li>
-                        <li>Leading research on microbial responses to environmental changes</li>
-                    </ul>
-                </div>
-                <div class="group-leader-contact">
-                    <span class="contact-icon">📧</span>
-                    <span>Contact: <b>eric.capo@umu.se</b></span>
-                </div>
+                <div class="group-leader-contact">Contact: <b>eric.capo@umu.se</b></div>
             </div>
         </div>
     </div>
@@ -363,7 +269,6 @@
     </div>
 </div>
 
-<!-- Rest of the content remains the same -->
 <div class="team-section">
     <h3 class="section-title underline">PhD students</h3> 	
     <div class="team-grid">
