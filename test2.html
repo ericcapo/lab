@@ -38,12 +38,21 @@
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
         
         .research-title {
             font-size: 1.5em;
             font-weight: bold;
             margin: 0;
+        }
+        
+        .research-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 4px;
         }
         
         .research-content {
@@ -72,6 +81,25 @@
         .project-description {
             margin-bottom: 15px;
             font-size: 0.95em;
+        }
+        
+        .video-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .video-caption {
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
         }
         
         .funding-section {
@@ -121,6 +149,8 @@
                         <div class="research-title">Marine Environments</div>
                     </div>
                     <div class="research-content">
+                        <img src="images/research/marine.jpg" alt="Marine Research" class="research-image">
+                        
                         <div class="research-description">
                             <p>We are interested about the impact of environment changes (warming, deoxygenation and acidification) on marine microbial communities. Among questions, the deoxygenation of coastal systems is of primary importance.</p>
                             <p>Oxygen deficiency is spreading in aquatic environments as a consequence of anthropogenic loading of nutrients and global warming. This has strong implications for ecosystems functioning including the expansion of dead zones and severe alterations of global biogeochemical cycles.</p>
@@ -134,6 +164,17 @@
                             <div class="project-description">
                                 Our projects include the study of the biogeographical distribution of Hg-cycling microorganisms in the global ocean (<a href="https://ericcapo.github.io/lab/meta-hg.html" target="_blank"><u>Meta-Hg working group</u></a>) and the exploration of the microbial ecology of the Baltic Sea, the Black Sea, Cariaco Basin, Norwegian fjords, Swedish fjords, Greenland fjords and Mayotte coral reefs.
                             </div>
+                        </div>
+                        
+                        <!-- Video moved to Marine Environments section -->
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/_EdsVF-Etpo" 
+                                title="Fjord frontiers" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-caption">Exploring fjord ecosystems and their microbial communities</div>
                         </div>
                         
                         <div class="funding-section">
@@ -166,9 +207,11 @@
                 <!-- Freshwater Environments Column -->
                 <div class="research-card">
                     <div class="research-header">
-                        <div class="research-title">Freshwater Environments</div>
+                        <div class="research-title">Lake Environments</div>
                     </div>
                     <div class="research-content">
+                        <img src="images/research/freshwater.jpg" alt="Freshwater Research" class="research-image">
+                        
                         <div class="research-description">
                             <p>Lake microbial communities are highly sensitive to environmental change and their changes in diversity, composition and abundance could be used as indicators.</p>
                             <p>However, there are still few studies about the temporal and spatial variability in microbial communities pre- and post- environmental disturbances. We use the DNA present in the water and the sedimentary archives of lake systems to provide new knowledge about the spatial and temporal dynamics of lake microbial communities.</p>
@@ -220,6 +263,8 @@
                         <div class="research-title">Other Environments</div>
                     </div>
                     <div class="research-content">
+                        <img src="images/research/other.jpg" alt="Other Environments Research" class="research-image">
+                        
                         <div class="research-description">
                             <p>Our research extends beyond marine and freshwater systems to explore microbial communities in diverse and extreme environments. These studies help us understand the limits of life and the adaptability of microorganisms to challenging conditions.</p>
                             <p>By investigating these unique ecosystems, we gain insights into fundamental microbial processes that have implications for biogeochemical cycling, climate change, and the search for life in extreme environments on Earth and beyond.</p>
@@ -228,54 +273,17 @@
                         <div class="research-projects">
                             <div class="project-title">Current Projects</div>
                             <div class="project-description">
-                                <strong>Permafrost Microbiology:</strong> Studying microbial communities in thawing permafrost and their role in greenhouse gas emissions as climate change progresses.
+                                <strong>Permafrost Microbiology:</strong> Studying microbial communities in thawing permafrost and their role of microorganisms of mercury and nitrogen cycling.
                             </div>
                             <div class="project-description">
-                                <strong>Deep Subsurface Biospheres:</strong> Investigating microbial life in deep sedimentary layers and its implications for global carbon cycling.
+                                <strong>Soil microbiology:</strong> Investigating microbial diversity in soil environments.
                             </div>
-                            <div class="project-description">
-                                <strong>Extreme Environments:</strong> Exploring microbial adaptations in hypersaline lakes, acidic mine drainage systems, and high-temperature environments.
-                            </div>
-                            <div class="project-description">
-                                <strong>Atmospheric Microbiomes:</strong> Researching the diversity and function of microorganisms transported through the atmosphere and their role in ecosystem connectivity.
+
                             </div>
                         </div>
                         
-                        <div class="funding-section">
-                            <div class="funding-title">Funding</div>
-                            <div class="funding-item">
-                                <strong>2024:</strong> Swedish Research Council Grant: Microbial life in extreme environments - adaptations and biogeochemical implications.
-                            </div>
-                            <div class="funding-item">
-                                <strong>2023:</strong> European Research Council Starting Grant: Exploring the deep biosphere through sedimentary DNA analysis.
-                            </div>
-                            <div class="funding-item">
-                                <strong>2022:</strong> Formas Research Grant: Climate feedback from thawing permafrost - microbial drivers and consequences.
-                            </div>
-                            <div class="funding-item">
-                                <strong>2021:</strong> Kempestiftelserna Fellowship: Atmospheric transport of microorganisms and their role in ecosystem connectivity.
-                            </div>
-                            <div class="funding-item">
-                                <strong>2020:</strong> VR International Postdoc Grant: Comparative analysis of microbial communities in extreme environments across latitudinal gradients.
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Video Section -->
-        <div class="research-section">
-            <h3 class="section-title underline">Research in Action</h3>
-            <div style="text-align: center; margin: 30px 0;">
-                <iframe 
-                    src="https://www.youtube.com/embed/_EdsVF-Etpo" 
-                    title="Fjord frontiers" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen 
-                    style="display: block; margin: 0 auto; width: 80%; height: 450px; border: none; border-radius: 8px;">
-                </iframe>
-                <p style="margin-top: 10px; font-style: italic;">Exploring fjord ecosystems and their microbial communities</p>
             </div>
         </div>
 	</div>
