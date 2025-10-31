@@ -1,10 +1,148 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Capo lab</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/sidebar.js"></script>
+    <title>Capo lab</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/sidebar.js"></script>
+    <style>
+        /* Additional styles for the research page */
+        .research-section {
+            margin-bottom: 40px;
+        }
+        
+        .research-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .research-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .research-header {
+            background-color: #0077be;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .research-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .research-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        
+        .research-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .research-description {
+            flex-grow: 1;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .research-description p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        
+        .research-projects {
+            margin-bottom: 20px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0077be;
+            text-align: left;
+        }
+        
+        .project-description {
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        
+        .video-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .video-caption {
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        
+        .funding-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .funding-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0077be;
+            text-align: left;
+        }
+        
+        .funding-item {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        
+        /* Ensure all content stays within cards */
+        .research-card > * {
+            min-height: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .research-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 	
 <body>
@@ -18,44 +156,118 @@
 	</div>
 	
 	<div id="content">
-<h2 class="section-title underline">Research lines</h3>
-<h3 class="section-title underline">Marine ecosystems</h3>
-<p align="justify">We are interested about the impact of environment changes (warming, deoxygenation and acidification) on marine microbial communinites. Among questions, the deoxygenation of coastal systems is of primary importance. Oxygen deficiency is spreading in aquatic environments as a consequence of anthropogenic loading of nutrients and global warming. This has strong implications for ecosystems functioning including the expansion of dead zones and severe alterations of global biogeochemical cycles. We aim to advance the knowledge about the consequences of deoxygenation of coastal systems on  microbial metabolisms and the subsequent impacts on their functions at an ecosystem-scale using molecular (paleo)ecology tools.</p>
-	
-<p align="justify">Currently, our projects include the study of the biogeographical distribution of Hg-cycling microorganisms in the global ocean (<a href="https://ericcapo.github.io/lab/meta-hg.html" target="_blank"><u>Meta-Hg working group</u></a>) and the exploration of the microbial ecology of the Baltic Sea (w Anders Andersson and Elinor Andrén), the Black Sea (w Marco Coolen), Cariaco Basin (w Maria Pachiadaki), Norwegian fjords (w Erik Björn, Andrea Garcia Bravo and Stefan Bertilsson), Swedish fjords (w Carina Bunse, Helena Filipsson, Courtney Stairs and Stefano Bonaglia), Greenland fjords (w Carl Lamborg) and Mayotte coral reefs (w Nick Kamenos and Heidi Burdett). 
-<iframe 
-  src="https://www.youtube.com/embed/_EdsVF-Etpo" 
-  title="Fjord frontiers" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen 
-  style="display: block; margin: 0 auto; width: 80%; height: 450px; border: none;">
-</iframe>
-		
-<p align="justify"><u>Funding: </u></p>
-<p align="justify">- 2024: Research grant from SWERVE- Funding 8 days of ship time onboard R/V Svea. Project BIOX - Exploring the biogeochemistry and microbial ecology of oxygen-depleted fjords: historical and modern insights. Applicant: Eric Capo (co-Pis Stefan Bertilsson, Erik Björn, Stefano Bonaglia, Carina Bunse, Jeffrey Hawkes, Helena Filipsson, Francisco Nascimento, Courtney Stairs). Equivalent 1.08 M SEK (97,100 €).</p>	
-<p align="justify">- 2024: Kempe Icelab post-doctoral fellowship. Environmental paleomicrobiology: Inferring community composition and function from metabolic fossils. Applicants: E Capo & E Libby. 734 kSEK (66,000 €).</p>		
-<p align="justify">- 2023: Starting grant funded by the Swedish Research Council VR (grant 2023-03504). <a href="https://www.umu.se/en/research/projects/gasping-for-breath-exploring-the-consequences-of-coastal-deoxygenation-on-microbial-processes-and-ecosystem-services2/" target="_blank"><u>Gasping for Breath</u></a>: Exploring the consequences of coastal deoxygenation on microbial processes and ecosystem services. Applicant : E Capo. 4 MSEK (342,000 €).</p>		
-<p align="justify">- 2023: Kempe post-doctoral fellowship. Effects of the deoxygenation of coastal systems on microbial metabolisms and related services. Applicants : E Capo & E Björn. 672 kSEK (59,000 €).</p>
-<p align="justify">- 2021: ICM Severo Ochoa post-doc fellowship (Spain). Unveiling the role of Hg-cycling microorganisms in the global ocean. Applicant: E Capo. 88,000 €</p>
-<p align="justify">- 2021: Research grant funded by Swedish Research Council for Sustainable Development Formas. Methylmercury formation in coastal seas: understanding risks associated with permanent and temporary oxygen deficiency. Lead applicant: E Björn (E Capo as co-applicant). 3 MSEK (290,000 €)</p>
-<p align="justify">- 2020: Research grant funded by the Ecochange research program: Adapted or replaced? Understanding the freshwater-to-brackish transition of the Baltic Sea microbiome by ancient DNA analysis. Applicants: E Capo & AF Andersson. 126 kSEK (12,000 €)</p>
-  
-<br>  
-<h3 class="section-title underline">Lake ecosystems</h3>
-<p align="justify">Lake microbial communities are highly sensitive to environmental change and their changes in diversity, composition and abundance could be use as indicators. However, there are 
-	still few studies about the temporal and spatial variability in microbial communite pre- and post- environmental disturbances. We use the DNA present in the water and the sedimentary archives of lake systems to provide new knowledge about the spatial and temporal dynamics of lake microbial communities towards a better characterization of their response to environmental change. </p> 
-	
-<p align="justify"> Our <a href="https://www.umu.se/en/research/projects/blade-project-biodiversity-and-lake-analysis-via-a-drone-enabled-environmental-dna-approach/" target="_blank"><u>BLADE project</u></a> aim to use a drone to collect water samples from many Swedish lakes. Other projects include the study of microbial communities from Abisko lakes (w Jan Karlsson), Lake Kassjön (w Johan Rydberg), Lake Ekoln (w Stefan Bertilsson), Lake Biwa (w Narumi Tsugeki), Chinese lakes (w Dongna Yan, Yu Zhao and Yanggheng Liu), peri-alpine lakes (w Isabelle Domaizon and Cécilia Barouillet), New Zealand lakes (w John Pearman), Lake NamCo (w Hendrik Vogel and Camille Thomas). The book Tracking Environmental Change Using Lake Sediments: <a href="https://link.springer.com/book/9783031437984" target="_blank"><u>Volume 6 – Sedimentary DNA</u></a> was release in December 2023. It provides an overview of the sedimentary DNA-based approaches in paleolimnology, and more specifically on the recovery of the DNA preserved in sedimentary archives to study past environmental change. Editors are Eric Capo, Cecilia Barouillet and John Smol. This project is an initiative from the <a href="https://sedadna.github.io/" target="_blank"><u>sedaDNA scientific society</u></a>.</p>
+        <h2 class="section-title underline">Research Lines</h2>
+        
+        <div class="research-section">
+            <div class="research-columns">
+                <!-- Marine Environments Column -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <div class="research-title">Marine Environments</div>
+                    </div>
+                    <div class="research-content">
+                        <img src="images/marine.jpg" alt="Marine Research" class="research-image">
+                        
+                        <div class="research-description">
+                            <p>We are interested about the impact of environment changes (warming, deoxygenation and acidification) on marine microbial communities. Among questions, the deoxygenation of coastal systems is of primary importance. Our projects include the study of the biogeographical distribution of Hg-cycling microorganisms in the global ocean (<a href="https://ericcapo.github.io/lab/meta-hg.html" target="_blank"><u>Meta-Hg working group</u></a>) and the exploration of the microbial ecology of the Baltic Sea, the Black Sea, Cariaco Basin, Norwegian fjords, Swedish fjords, Greenland fjords and Mayotte coral reefs.</p>
+                        </div>
+                        
+                        <!-- Video moved to Marine Environments section -->
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/_EdsVF-Etpo" 
+                                title="Fjord frontiers" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-caption">Exploring fjord ecosystems and their microbial communities</div>
+                        </div>
+                        
+                        <div class="funding-section">
+                            <div class="funding-title">Funding</div>
+                            <div class="funding-item">
+                                <strong>2024:</strong> Research grant from SWERVE - Funding 8 days of ship time onboard R/V Svea. Project BIOX - Exploring the biogeochemistry and microbial ecology of oxygen-depleted fjords.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2024:</strong> Kempe Icelab post-doctoral fellowship. Environmental paleomicrobiology: Inferring community composition and function from metabolic fossils.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2023:</strong> Starting grant funded by the Swedish Research Council VR. <a href="https://www.umu.se/en/research/projects/gasping-for-breath-exploring-the-consequences-of-coastal-deoxygenation-on-microbial-processes-and-ecosystem-services2/" target="_blank"><u>Gasping for Breath</u></a>: Exploring the consequences of coastal deoxygenation.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2023:</strong> Kempe post-doctoral fellowship. Effects of the deoxygenation of coastal systems on microbial metabolisms and related services.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2021:</strong> ICM Severo Ochoa post-doc fellowship. Unveiling the role of Hg-cycling microorganisms in the global ocean.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2021:</strong> Research grant funded by Swedish Research Council for Sustainable Development Formas. Methylmercury formation in coastal seas.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2020:</strong> Research grant funded by the Ecochange research program: Adapted or replaced? Understanding the freshwater-to-brackish transition of the Baltic Sea microbiome.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lake Environments Column -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <div class="research-title">Lake Environments</div>
+                    </div>
+                    <div class="research-content">
+                        <img src="images/lake.jpg" alt="Lake Research" class="research-image">
+                        
+                        <div class="research-description">
+                            <p>We use the DNA present in the water and the sedimentary archives of lake systems to provide new knowledge about the spatial and temporal dynamics of lake microbial communities. Our <a href="https://www.umu.se/en/research/projects/blade-project-biodiversity-and-lake-analysis-via-a-drone-enabled-environmental-dna-approach/" target="_blank"><u>BLADE project</u></a> aims to use a drone to collect water samples from many Swedish lakes. Other projects include the study of microbial communities from Abisko lakes, Lake Ekoln, Lake Biwa, Chinese lakes (Sihailongwan Maar Lake, Daihai, Chenghai...), peri-alpine lakes, New Zealand lakes. 
+                        </div>
+                        
+                        <div class="funding-section">
+                            <div class="funding-title">Funding</div>
+                            <div class="funding-item">
+                                <strong>2025:</strong> Research Grant funded by Göran Gustafsson foundation. Mapping the microbial diversity in subarctic lakes with a drone-sampling environmental DNA sequencing approach.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2025:</strong> Research Grant funded by CIRC. Unraveling microbial diversity in Swedish Arctic lakes.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2023:</strong> Research grant funded by 2023 Endeavour Fund from New Zealand government. Applying a functional evidence approach to prioritise lake restoration initiatives.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2022:</strong> Research grant funded by the Swiss National Science Foundation. Deep biosphere-geosphere interactions at the top of the world (DIGESTED).
+                            </div>
+                            <div class="funding-item">
+                                <strong>2021:</strong> Research grant funded by the Japan Society for the Promotion of Science. Development of new method for reconstructing microorganisms using sedimentary DNA.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2020:</strong> Research grant funded by the Japan Society for the Promotion of Science: Reconstruction of host and parasite during the past century in Lake Biwa.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2019:</strong> Research grant funded by Anna-Greta and Holger Crafoord's Research Grant. A key to unravel lake history from the sedimentary black box.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Environments Column -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <div class="research-title">Other Environments</div>
+                    </div>
+                    <div class="research-content">
+                        <img src="images/other.jpg" alt="Other Environments Research" class="research-image">
+                        
+                        <div class="research-description">
+                            <p>Our research extends beyond marine and freshwater systems to explore microbial communities in diverse and extreme environments. These studies help us understand the limits of life and the adaptability of microorganisms to challenging conditions. By investigating these unique ecosystems, we gain insights into fundamental microbial processes that have implications for biogeochemical cycling, climate change, and the search for life in extreme environments on Earth and beyond.</p>
+                        </div>
+                        
+                        
 
-<p align="justify"><u>Funding: </u></p>
-<p align="justify">- 2025: Research Grant funded by Göran Gustafsson foundation (stifelse för natur och miljö i Lappland 2025). Mapping the microbial diversity in subarctic lakes (Lappland) with a drone-sampling environmental DNA sequencing approach. Applicant: Eric Capo. 99.8 kSEK (8,970 €)</p> 
-<p align="justify">- 2025: Research Grant funded by CIRC. Unraveling microbial diversity in Swedish Arctic lakes. Applicant: Eric Capo (Collabs: Meifang Zhong, Baraa Rehamnia, Johan van Snippenberg). 80 kSEK (7,190 €)</p> 
-<p align="justify">- 2023: Research grant funded by 2023 Endeavour Fund from New Zealand government.  Applying a functional evidence approach to prioritise lake restoration initiatives. Applicant: J Pearman (E Capo as collaborator). 1 MNZD (550,000 €)</p> 
-<p align="justify">- 2022: Research grant funded by the Swiss National Science Foundation (Synergia, CRSII5_213522). Deep biosphere-geosphere interactions at the top of the world (DIGESTED): An interdisciplinary approach to interpret a Myr climate record from lake Nam Co (Tibetan Plateau) Applicant: H Vogel (E Capo as collaborator, WP4). 3 MCHF (3,116,000 €)</p> 
-<p align="justify">- 2021: Research grant (2021-2024) funded by the Japan Society for the Promotion of Science. Grants-in-Aid for Scientific Research. Development of new method for reconstructing microorganisms using sedimentary DNA to assess the effect of global warming measures on lake ecosystems. Applicant: N Tsugeki. (E Capo as collaborator). 3,2 MYEN (10,700 €)</p> 
-<p align="justify">- 2020: Research grant funded by the Japan Society for the Promotion of Science: Reconstruction of host and parasite during the past century in Lake Biwa by using paleolimnological analysis. Applicant: N Tsugeki (E Capo as collaborator). 900 kYEN (6,980 €)</p> 
-<p align="justify">- 2019: Research grant funded by Anna-Greta and Holger Crafoord’s Research Grant in Biosciences in the field of Aquatic microbial ecology. A key to unravel lake history from the sedimentary black box : Sedimentary DNA to reconstruct long-term dynamics of aquatic microbial communities. Applicant: E Capo. 122 kSEK (10,600 €)</p>
-</div>
-
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
 </body>
 </html>
