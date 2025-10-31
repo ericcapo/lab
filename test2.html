@@ -66,6 +66,12 @@
             flex-grow: 1;
             margin-bottom: 20px;
             line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .research-description p {
+            text-align: justify;
+            margin-bottom: 15px;
         }
         
         .research-projects {
@@ -74,13 +80,16 @@
         
         .project-title {
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             color: #0077be;
+            text-align: left;
         }
         
         .project-description {
             margin-bottom: 15px;
             font-size: 0.95em;
+            line-height: 1.5;
+            text-align: justify;
         }
         
         .video-container {
@@ -100,6 +109,7 @@
             font-style: italic;
             font-size: 0.9em;
             color: #666;
+            text-align: center;
         }
         
         .funding-section {
@@ -112,12 +122,19 @@
             font-weight: bold;
             margin-bottom: 10px;
             color: #0077be;
+            text-align: left;
         }
         
         .funding-item {
             margin-bottom: 10px;
             font-size: 0.9em;
             line-height: 1.5;
+            text-align: justify;
+        }
+        
+        /* Ensure all content stays within cards */
+        .research-card > * {
+            min-height: 0;
         }
         
         @media (max-width: 768px) {
@@ -149,7 +166,7 @@
                         <div class="research-title">Marine Environments</div>
                     </div>
                     <div class="research-content">
-                        <img src="images/marine.jpg" alt="Marine Research" class="research-image">
+                        <img src="images/research/marine.jpg" alt="Marine Research" class="research-image">
                         
                         <div class="research-description">
                             <p>We are interested about the impact of environment changes (warming, deoxygenation and acidification) on marine microbial communities. Among questions, the deoxygenation of coastal systems is of primary importance.</p>
@@ -204,13 +221,13 @@
                     </div>
                 </div>
                 
-                <!-- Freshwater Environments Column -->
+                <!-- Lake Environments Column -->
                 <div class="research-card">
                     <div class="research-header">
                         <div class="research-title">Lake Environments</div>
                     </div>
                     <div class="research-content">
-                        <img src="images/lake.jpg" alt="Freshwater Research" class="research-image">
+                        <img src="images/research/freshwater.jpg" alt="Lake Research" class="research-image">
                         
                         <div class="research-description">
                             <p>Lake microbial communities are highly sensitive to environmental change and their changes in diversity, composition and abundance could be used as indicators.</p>
@@ -263,7 +280,7 @@
                         <div class="research-title">Other Environments</div>
                     </div>
                     <div class="research-content">
-                        <img src="images/other.jpg" alt="Other Environments Research" class="research-image">
+                        <img src="images/research/other.jpg" alt="Other Environments Research" class="research-image">
                         
                         <div class="research-description">
                             <p>Our research extends beyond marine and freshwater systems to explore microbial communities in diverse and extreme environments. These studies help us understand the limits of life and the adaptability of microorganisms to challenging conditions.</p>
@@ -278,10 +295,26 @@
                             <div class="project-description">
                                 <strong>Soil microbiology:</strong> Investigating microbial diversity in soil environments.
                             </div>
-
-                            </div>
                         </div>
                         
+                        <div class="funding-section">
+                            <div class="funding-title">Funding</div>
+                            <div class="funding-item">
+                                <strong>2024:</strong> Swedish Research Council Grant: Microbial life in extreme environments - adaptations and biogeochemical implications.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2023:</strong> European Research Council Starting Grant: Exploring the deep biosphere through sedimentary DNA analysis.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2022:</strong> Formas Research Grant: Climate feedback from thawing permafrost - microbial drivers and consequences.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2021:</strong> Kempestiftelserna Fellowship: Atmospheric transport of microorganisms and their role in ecosystem connectivity.
+                            </div>
+                            <div class="funding-item">
+                                <strong>2020:</strong> VR International Postdoc Grant: Comparative analysis of microbial communities in extreme environments across latitudinal gradients.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
