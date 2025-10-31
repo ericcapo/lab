@@ -73,6 +73,73 @@
             color: #333;
         }
         
+        /* Full-width group leader section matching other cards */
+        .group-leader-section {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #0077be;
+        }
+        
+        .group-leader-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .group-leader-content {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            gap: 0;
+        }
+        
+        .group-leader-image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-right: 3px solid #0077be;
+        }
+        
+        .group-leader-info {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .group-leader-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #0077be;
+        }
+        
+        .group-leader-role {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        
+        .group-leader-description {
+            flex-grow: 1;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .group-leader-contact {
+            margin-top: auto;
+            font-size: 0.9em;
+            color: #333;
+            font-weight: bold;
+        }
+        
         .alumni-list, .collaborators-list {
             columns: 2;
             column-gap: 30px;
@@ -91,6 +158,17 @@
             
             .alumni-list, .collaborators-list {
                 columns: 1;
+            }
+            
+            .group-leader-content {
+                flex-direction: column;
+            }
+            
+            .group-leader-image {
+                width: 100%;
+                height: 250px;
+                border-right: none;
+                border-bottom: 3px solid #0077be;
             }
         }
     </style>
@@ -111,16 +189,16 @@
 
 <div class="team-section">
     <h3 class="section-title underline">Group leader</h3> 	
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="images/Eric.png" alt="Eric" class="team-image">
-            <div class="team-info">
-                <div class="team-name"><a href="https://ericcapo.github.io/lab/ericcapo.html" target="_blank">Eric Capo</a></div>
-                <div class="team-role">Assistant Professor</div>
-                <div class="team-description">
-                    Eric Capo is Assistant Professor at the Department of Ecology and Environmental Science at Umeå University (Sweden). He has a PhD in molecular paleoecology with expertise in aquatic microbial ecology and is the founder of the <a href="https://sedadna.github.io/" target="_blank"><u>sedaDNA scientific society</u></a>, a network about sedDNA research.
+    <div class="group-leader-section">
+        <div class="group-leader-content">
+            <img src="images/Eric.png" alt="Eric Capo" class="group-leader-image">
+            <div class="group-leader-info">
+                <div class="group-leader-name"><a href="https://ericcapo.github.io/lab/ericcapo.html" target="_blank">Eric Capo</a></div>
+                <div class="group-leader-role">Assistant Professor</div>
+                <div class="group-leader-description">
+                    Assistant Professor at Umeå University with expertise in aquatic microbial ecology and molecular paleoecology. Founder of the <a href="https://sedadna.github.io/" target="_blank"><u>sedaDNA scientific society</u></a>.
                 </div>
-                <div class="team-contact">Contact: <b>eric.capo@umu.se</b></div>
+                <div class="group-leader-contact">Contact: <b>eric.capo@umu.se</b></div>
             </div>
         </div>
     </div>
@@ -270,8 +348,6 @@
 <div class="team-section">
     <h3 class="section-title underline">Undergraduate students</h3> 	
     <div class="team-grid">
-
-        
         <div class="team-card">
             <img src="images/Manuela2.jpg" alt="Manuela" class="team-image">
             <div class="team-info">
